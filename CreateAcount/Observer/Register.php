@@ -37,7 +37,7 @@ class Register implements ObserverInterface
     {
         $customer = $observer->getCustomer();
         $this->session->setCustomerDataAsLoggedIn($customer);
-        $customRedirectionUrl = $this->_url->getUrl('thank-you-account-creation');
+        $customRedirectionUrl = $this->_url->getUrl('thank-you-account-creation'); // Your Custom Url Here
         $this->_responseFactory->create()->setRedirect($customRedirectionUrl)->sendResponse();
         die();           
     }
