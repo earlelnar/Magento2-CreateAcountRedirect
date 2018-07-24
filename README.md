@@ -4,7 +4,8 @@
 
 </br>
 
-# Navigate to Stores > Configuration > MageTim > Create Account redirect and place your custom redirect Url
+# Navigate to Stores > Configuration > MageTim > Create Account redirect
+  You can place your custom url redirect in here. 
 ![image](https://user-images.githubusercontent.com/14094984/43121532-aa3ab4e2-8f50-11e8-914c-e1c249279760.png)
 
 </br>
