@@ -20,24 +20,29 @@ class Register implements ObserverInterface
 
     protected $session;
 
+    protected $_helper;
+
     public function __construct(
         \Magento\Framework\View\Element\BlockFactory $blockFactory,
         \Magento\Framework\App\ResponseFactory $responseFactory,
         \Magento\Framework\UrlInterface $url,
         \Magento\Framework\App\Response\Http $redirect,
-        \Magento\Customer\Model\Session $customerSession
+        \Magento\Customer\Model\Session $customerSession,
+        \MageTim\CreateAccount\Helper\Data $helper
     ) {
         $this->_responseFactory = $responseFactory;
         $this->_url = $url;
         $this->_redirect = $redirect;
         $this->session = $customerSession;
+        $this->_helper = $helper;
     }
 
     public function execute(\Magento\Framework\Event\Observer $observer)
     {
+        $thank_you_page = $this->_helper->getCustomUrl();
         $customer = $observer->getCustomer();
         $this->session->setCustomerDataAsLoggedIn($customer);
-        $customRedirectionUrl = $this->_url->getUrl('thank-you-account-creation'); // Your Custom Url Here
+        $customRedirectionUrl = $this->_url->getUrl($thank_you_page);
         $this->_responseFactory->create()->setRedirect($customRedirectionUrl)->sendResponse();
         die();           
     }
