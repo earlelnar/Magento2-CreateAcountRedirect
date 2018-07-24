@@ -37,14 +37,13 @@ https://optinmonster.com/google-analytics-101-how-to-track-your-conversions-step
 </br>
 
 ## Magento 2 Tested Versions
-> 2.1.3
-> 2.2.3
+> 2.1.x
+> 2.2.x
 
 </br>
 
 ## Changelog
-> 2.1.x
-> 2.2.x
+**Version 2.0.0 (2018-07-24)**
 
 </br>
 
