@@ -14,7 +14,7 @@
  php -f bin/magento setup:static-content:deploy
  php -f bin/magento cache:flush
 ```
-4. Go to Admin > Stores > Configuration > MageTim > Create Account redirect > Configure your settings here. </br>
+4. Go to Admin > Stores > Configuration > MageTim > Create Account redirect > Configure your settings here. 
 ![image](https://user-images.githubusercontent.com/14094984/43121532-aa3ab4e2-8f50-11e8-914c-e1c249279760.png)
 
 </br>
