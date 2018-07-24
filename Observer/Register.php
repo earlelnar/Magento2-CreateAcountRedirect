@@ -39,11 +39,14 @@ class Register implements ObserverInterface
 
     public function execute(\Magento\Framework\Event\Observer $observer)
     {
-        $thank_you_page = $this->_helper->getCustomUrl();
-        $customer = $observer->getCustomer();
-        $this->session->setCustomerDataAsLoggedIn($customer);
-        $customRedirectionUrl = $this->_url->getUrl($thank_you_page);
-        $this->_responseFactory->create()->setRedirect($customRedirectionUrl)->sendResponse();
-        die();           
+        $status = $this->_helper->getisEnabled();
+        if (!empty($status)) {
+            $thank_you_page = $this->_helper->getCustomUrl();
+            $customer = $observer->getCustomer();
+            $this->session->setCustomerDataAsLoggedIn($customer);
+            $customRedirectionUrl = $this->_url->getUrl($thank_you_page);
+            $this->_responseFactory->create()->setRedirect($customRedirectionUrl)->sendResponse();   
+            die();
+        }           
     }
 }
