@@ -19,6 +19,12 @@
 
 </br>
 
+## Example
+After successful registration. It was redirected to a custom thank you page.
+![image](https://user-images.githubusercontent.com/14094984/43122968-6641f41c-8f55-11e8-96d4-9c6fc8277be8.png)
+
+</br>
+
 # For Tracking Conversions on Google Analytics
 Credits to the owner of the article "Google Analytics 101: How to Track Your Conversions (Step-by-Step)". </br>
 by Mary Fernandez
