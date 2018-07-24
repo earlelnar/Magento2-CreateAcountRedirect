@@ -1,8 +1,7 @@
 # Magento2: Customer Account Creation Custom Success Redirect Url
 Set Custom Redirect Url after a successfull account registration
 
-http://prntscr.com/ka7rmo
-
+![Magento 2 Account Creation Redirect Extension](http://prntscr.com/ka7rmo)
 
 
 ## Magento 2 Tested Versions
