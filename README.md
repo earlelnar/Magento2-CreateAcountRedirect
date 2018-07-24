@@ -12,7 +12,7 @@
 
 # For Tracking Conversions on Google Analytics
 Credits to the owner of the article "Google Analytics 101: How to Track Your Conversions (Step-by-Step)". </br>
-by Mary Fernandez on March 20, 2018
+by Mary Fernandez
 </br>
 Here's a detailed tutorial for Google Analytics Tracking conversions step by step: 
 https://optinmonster.com/google-analytics-101-how-to-track-your-conversions-step-by-step/
