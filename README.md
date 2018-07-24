@@ -9,6 +9,6 @@ Set Custom Redirect Url after a successfull account registration
 > 2.2.3
 
 
-Credits to this developers who helped me make this extension possible:
+Special Thanks to these following people below:
 https://magento.stackexchange.com/users/35758/prince-patel <br/>
 https://magento.stackexchange.com/users/4564/amit-bera
