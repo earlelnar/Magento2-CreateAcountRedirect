@@ -45,3 +45,4 @@ https://optinmonster.com/google-analytics-101-how-to-track-your-conversions-step
 Special Thanks to these following people below:</br>
 https://magento.stackexchange.com/users/35758/prince-patel <br/>
 https://magento.stackexchange.com/users/4564/amit-bera
+https://github.com/jakevegazzz
