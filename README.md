@@ -10,7 +10,10 @@
 
 </br>
 
-# This is good to use in Google Analytics Goal tracking
+# For Tracking Conversions on Google Analytics
+Credits to the owner of this article. Here's a detailed insructions for Google Analytics Tracking conversions step by step: 
+https://optinmonster.com/google-analytics-101-how-to-track-your-conversions-step-by-step/
+
 ![image](https://user-images.githubusercontent.com/14094984/43121449-676c786c-8f50-11e8-8a74-60ac892e6ba2.png)
 
 </br>
