@@ -8,13 +8,13 @@
 1. Download the extension .zip file and extract the files.
 2. Copy the extension files folder to the {magento2-root-dir}/app/code
 3. Run the following series of command from SSH console of your server:
-
-`php bin/magento module:enable MageTim_CreateAccount  --clear-static-content`
-`php bin/magento setup:upgrade`
-
-4. Flush the store cache
-`php bin/magento cache:flush`
-5. Go to Admin > Stores > Configuration > MageTim > Create Account redirect > Configure your settings here.
+```
+ php -f bin/magento module:enable --clear-static-content MageTim_CreateAccount
+ php -f bin/magento setup:upgrade
+ php -f bin/magento setup:static-content:deploy
+ php -f bin/magento cache:flush
+```
+4. Go to Admin > Stores > Configuration > MageTim > Create Account redirect > Configure your settings here.
 ![image](https://user-images.githubusercontent.com/14094984/43121532-aa3ab4e2-8f50-11e8-914c-e1c249279760.png)
 
 </br>
