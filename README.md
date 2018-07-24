@@ -1,4 +1,4 @@
-# Magento2: Customer Account Creation Success Redirect Url
+# Magento2: Customer Account Creation Custom Success Redirect Url
 Custom Registration Success Redirect Url
 
 Credits to this developers who helped me make this extension possible:
