@@ -1,4 +1,4 @@
-# Magento2: Customer Account Creation Custom Success Redirect Url
+# Magento2 Register Success Redirect Url
   Set Custom Url to redirect upon successful account registration to your Magento 2 site. 
   
 
