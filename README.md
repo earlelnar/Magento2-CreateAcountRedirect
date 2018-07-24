@@ -8,7 +8,8 @@ Set Custom Redirect Url after a successfull account registration
 > 2.1.3
 > 2.2.3
 
+</br>
 
-Special Thanks to these following people below:
+Special Thanks to these following people below:</br>
 https://magento.stackexchange.com/users/35758/prince-patel <br/>
 https://magento.stackexchange.com/users/4564/amit-bera
