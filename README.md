@@ -4,8 +4,8 @@
 
 </br>
 
-# Backend Configurations
-![image](https://user-images.githubusercontent.com/14094984/43120855-3e0b9716-8f4e-11e8-8393-06ebde78031f.png)
+# Navigate to Stores > Configuration > MageTim > Create Account redirect and place your custom redirect Url
+![image](https://user-images.githubusercontent.com/14094984/43121532-aa3ab4e2-8f50-11e8-914c-e1c249279760.png)
 
 </br>
 
