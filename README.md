@@ -42,6 +42,12 @@ https://optinmonster.com/google-analytics-101-how-to-track-your-conversions-step
 
 </br>
 
+## Changelog
+> 2.1.x
+> 2.2.x
+
+</br>
+
 ## Special Thanks to these following people below:</br>
 https://magento.stackexchange.com/users/35758/prince-patel <br/>
 https://magento.stackexchange.com/users/4564/amit-bera</br>
