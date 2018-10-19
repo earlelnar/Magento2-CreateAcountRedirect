@@ -1,4 +1,8 @@
 <?php
+/**
+ * Magento2-CreateAcountRedirect
+ * @author MazeStricks 
+ */
 namespace MageTim\CreateAccount\Helper;
 
 class Data extends \Magento\Framework\App\Helper\AbstractHelper {
