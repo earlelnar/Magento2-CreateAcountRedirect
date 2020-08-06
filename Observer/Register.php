@@ -10,7 +10,14 @@
 
 namespace MageTim\CreateAccount\Observer;
 
+use Magento\Customer\Model\Session;
+use Magento\Framework\App\Response\Http;
+use Magento\Framework\App\ResponseFactory;
+use Magento\Framework\Event\Observer;
 use Magento\Framework\Event\ObserverInterface;
+use Magento\Framework\UrlInterface;
+use Magento\Framework\View\Element\BlockFactory;
+use MageTim\CreateAccount\Helper\Data;
 
 
 /**
@@ -21,46 +28,46 @@ use Magento\Framework\Event\ObserverInterface;
 class Register implements ObserverInterface {
 
     /**
-     * @var \Magento\Framework\App\ResponseFactory
+     * @var ResponseFactory
      */
     protected $_responseFactory;
 
     /**
-     * @var \Magento\Framework\App\Response\Http
+     * @var Http
      */
     protected $_redirect;
 
     /**
-     * @var \Magento\Framework\UrlInterface
+     * @var UrlInterface
      */
     protected $_url;
 
     /**
-     * @var \Magento\Customer\Model\Session
+     * @var Session
      */
     protected $session;
 
     /**
-     * @var \MageTim\CreateAccount\Helper\Data
+     * @var Data
      */
     protected $_helper;
 
     /**
      * Register constructor.
-     * @param \Magento\Framework\View\Element\BlockFactory $blockFactory
-     * @param \Magento\Framework\App\ResponseFactory $responseFactory
-     * @param \Magento\Framework\UrlInterface $url
-     * @param \Magento\Framework\App\Response\Http $redirect
-     * @param \Magento\Customer\Model\Session $customerSession
-     * @param \MageTim\CreateAccount\Helper\Data $helper
+     * @param BlockFactory $blockFactory
+     * @param ResponseFactory $responseFactory
+     * @param UrlInterface $url
+     * @param Http $redirect
+     * @param Session $customerSession
+     * @param Data $helper
      */
     public function __construct(
-        \Magento\Framework\View\Element\BlockFactory $blockFactory,
-        \Magento\Framework\App\ResponseFactory $responseFactory,
-        \Magento\Framework\UrlInterface $url,
-        \Magento\Framework\App\Response\Http $redirect,
-        \Magento\Customer\Model\Session $customerSession,
-        \MageTim\CreateAccount\Helper\Data $helper
+        BlockFactory $blockFactory,
+        ResponseFactory $responseFactory,
+        UrlInterface $url,
+        Http $redirect,
+        Session $customerSession,
+        Data $helper
     ) {
         $this->_responseFactory = $responseFactory;
         $this->_url = $url;
@@ -72,9 +79,9 @@ class Register implements ObserverInterface {
     /**
      * After customer registration it will redirect to the specified custom url
      *
-     * @param \Magento\Framework\Event\Observer $observer
+     * @param Observer $observer
      */
-    public function execute(\Magento\Framework\Event\Observer $observer)
+    public function execute(Observer $observer)
     {
         $status = $this->_helper->getisEnabled();
         if (!empty($status)) {
