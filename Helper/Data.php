@@ -10,7 +10,10 @@
 
 namespace MageTim\CreateAccount\Helper;
 
-class Data extends \Magento\Framework\App\Helper\AbstractHelper {
+use Magento\Framework\App\Helper\AbstractHelper;
+use Magento\Store\Model\ScopeInterface;
+
+class Data extends AbstractHelper {
 
     /**
      * Constants
@@ -26,7 +29,7 @@ class Data extends \Magento\Framework\App\Helper\AbstractHelper {
 	public function getCustomUrl() {
 		return $this->scopeConfig->getValue(
 			self::XML_CUSTOM_URL,
-			\Magento\Store\Model\ScopeInterface::SCOPE_STORE
+			ScopeInterface::SCOPE_STORE
 		);
 	}
 
@@ -38,7 +41,7 @@ class Data extends \Magento\Framework\App\Helper\AbstractHelper {
 	public function getisEnabled() {
 		return $this->scopeConfig->getValue(
 			self::XML_ENABLE_ME,
-			\Magento\Store\Model\ScopeInterface::SCOPE_STORE
+			ScopeInterface::SCOPE_STORE
 		);
 	}
 }
