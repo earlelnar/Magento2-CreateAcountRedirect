@@ -38,8 +38,9 @@ https://optinmonster.com/google-analytics-101-how-to-track-your-conversions-step
 </br>
 
 ## Magento 2 Tested Versions
-**2.1.x** </br>
-**2.2.x**
+**2.1.x** <br/>
+**2.2.x** <br/>
+**2.3.x**
 
 </br>
 
