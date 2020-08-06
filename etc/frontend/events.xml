@@ -1,4 +1,15 @@
 <?xml version="1.0"?>
+<!--
+/**
+ * MageTim
+ *
+ * @category MageTim
+ * @package CreateAccount
+ * @author Earl Elnar
+ * @email acenplify@gmail.com
+ */
+-->
+
 <config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:Event/etc/events.xsd">
     <event name="customer_register_success">
         <observer name="custom_redirect_register_success" instance="MageTim\CreateAccount\Observer\Register"/>
