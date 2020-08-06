@@ -1,10 +1,13 @@
 <?php
 /**
- * Magento2-CreateAcountRedirect
- * @author MazeStricks 
+ * MageTim
+ *
+ * @category MageTim
+ * @package CreateAccount
+ * @author Earl Elnar
+ * @email acenplify@gmail.com
  */
-\Magento\Framework\Component\ComponentRegistrar::register(
-    \Magento\Framework\Component\ComponentRegistrar::MODULE,
-    'MageTim_CreateAccount',
-    __DIR__
-);
+
+use \Magento\Framework\Component\ComponentRegistrar;
+
+ComponentRegistrar::register(ComponentRegistrar::MODULE, 'MageTim_CreateAccount', __DIR__);
