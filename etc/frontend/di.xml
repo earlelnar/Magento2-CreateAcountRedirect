@@ -1,0 +1,19 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * EE Bored in the house.
+ *
+ * @category    EE
+ * @package     CreateAccount
+ * @author      Earl Elnar
+ * @email       acenplify@gmail.com
+ */
+-->
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:noNamespaceSchemaLocation="urn:magento:framework:ObjectManager/etc/config.xsd">
+    <type name="Magento\Customer\Controller\Account\CreatePost">
+        <plugin name="ee_custom_redirect_register_success"
+                type="EE\CreateAccount\Plugin\CreatePostPlugin"
+                sortOrder="1" disabled="false"/>
+    </type>
+</config>

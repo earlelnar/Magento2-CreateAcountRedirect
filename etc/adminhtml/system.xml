@@ -1,34 +1,43 @@
 <?xml version="1.0"?>
 <!--
 /**
- * MageTim
+ * EE Bored in the house.
  *
- * @category MageTim
- * @package CreateAccount
- * @author Earl Elnar
- * @email acenplify@gmail.com
+ * @category    EE
+ * @package     CreateAccount
+ * @author      Earl Elnar
+ * @email       acenplify@gmail.com
  */
 -->
 
-<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Config:etc/system_file.xsd">
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Config:etc/system_file.xsd">
     <system>
-        <tab id="magetim" translate="label" sortOrder="10">
-            <label>MageTim</label>
+        <tab id="eecreateaccount" translate="label" sortOrder="100">
+            <label>EE</label>
         </tab>
-        <section id="createaccount" translate="label" sortOrder="130" showInDefault="1" showInWebsite="1" showInStore="1">
+        <section id="createaccount" translate="label" sortOrder="130" showInDefault="1" showInWebsite="1"
+                 showInStore="1">
             <class>separator-top</class>
             <label>Create Account Redirect</label>
-            <tab>magetim</tab>
-            <resource>MageTim_CreateAccount::createaccount_config</resource>
-            <group id="general" translate="label" type="text" sortOrder="10" showInDefault="1" showInWebsite="1" showInStore="1">
+            <tab>eecreateaccount</tab>
+            <resource>EE_CreateAccount::createaccount_config</resource>
+            <group id="general" translate="label" type="text" sortOrder="10" showInDefault="1" showInWebsite="1"
+                   showInStore="1">
                 <label>Create Account Redirect Configuration</label>
-                <field id="enable" translate="label" type="select" sortOrder="1" showInDefault="1" showInWebsite="1" showInStore="1">
-                    <label>Module Enable</label>
+                <field id="enable" translate="label" type="select" sortOrder="1" showInDefault="1" showInWebsite="1"
+                       showInStore="1">
+                    <label>Enabled</label>
                     <source_model>Magento\Config\Model\Config\Source\Yesno</source_model>
                 </field>
-                <field id="custom_url" translate="label" type="text" sortOrder="1" showInDefault="1" showInWebsite="1" showInStore="1">
+                <field id="custom_url" translate="label" type="text" sortOrder="1" showInDefault="1" showInWebsite="1"
+                       showInStore="1">
                     <label>Custom Url</label>
-                    <comment>Place your custom redirect url in here</comment>
+                    <validate>required-entry</validate>
+                    <comment>Place your custom redirect url in here. Example CMS about-us</comment>
+                    <depends>
+                        <field id="enable">1</field>
+                    </depends>
                 </field>
             </group>
         </section>
