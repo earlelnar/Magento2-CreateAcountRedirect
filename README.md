@@ -48,7 +48,7 @@ https://optinmonster.com/google-analytics-101-how-to-track-your-conversions-step
 </br>
 
 ## Changelog
-##(2021-11-16)
+(2021-11-16)
 **Updated the module:**
 - Refactored the module and used Plugin instead of Observer.
 - Added validation to Custom URL field from the configuration.
