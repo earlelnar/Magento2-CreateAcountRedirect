@@ -17,7 +17,7 @@
  php bin/magento setup:clean
  php bin/magento maintenance:disable
 ```
-4. Go to Admin > Stores > Configuration > MageTim > Create Account redirect > Configure your settings here. 
+4. Go to Admin > Stores > Configuration > EE > Create Account redirect > Configure your settings here. 
 ![image](https://user-images.githubusercontent.com/14094984/43121532-aa3ab4e2-8f50-11e8-914c-e1c249279760.png)
 
 </br>
@@ -39,19 +39,20 @@ https://optinmonster.com/google-analytics-101-how-to-track-your-conversions-step
 
 </br>
 
-## Magento 2 Tested Versions
+## Magento 2 Tested Versions (Community Edition)
 **2.1.x** <br/>
 **2.2.x** <br/>
-**2.3.x**
+**2.3.x** <br/>
+**2.4.3**
 
 </br>
 
 ## Changelog
-**Version 2.0.0 (2018-07-24)**
-
+##(2021-11-16)
+**Updated the module:**
+- Refactored the module and used Plugin instead of Observer.
+- Added validation to Custom URL field from the configuration.
 </br>
 
 ## Special Thanks to these following people below:</br>
-https://magento.stackexchange.com/users/35758/prince-patel <br/>
-https://magento.stackexchange.com/users/4564/amit-bera</br>
 https://github.com/jakevegazzz

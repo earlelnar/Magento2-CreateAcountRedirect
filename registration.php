@@ -1,13 +1,17 @@
 <?php
 /**
- * MageTim
+ * EE Bored in the house.
  *
- * @category MageTim
- * @package CreateAccount
- * @author Earl Elnar
- * @email acenplify@gmail.com
+ * @category    EE
+ * @package     CreateAccount
+ * @author      Earl Elnar
+ * @email       acenplify@gmail.com
  */
 
-use \Magento\Framework\Component\ComponentRegistrar;
+use Magento\Framework\Component\ComponentRegistrar;
 
-ComponentRegistrar::register(ComponentRegistrar::MODULE, 'MageTim_CreateAccount', __DIR__);
+ComponentRegistrar::register(
+    ComponentRegistrar::MODULE,
+    'EE_CreateAccount',
+    __DIR__
+);
